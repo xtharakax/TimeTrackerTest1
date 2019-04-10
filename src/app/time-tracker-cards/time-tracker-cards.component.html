@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="card" *ngFor="let task of tasks">
+    <div class="card-body">
+      <p class="card-text"> {{task.desc}}</p>
+      <div class="form-group">
+        <input class="form-control col-sm-2" type="text" name="stopwatch" id="">
+        <button type="button" class="btn btn-success" name="btnStart">Start</button>
+        <button type="button" class="btn btn-secondary" name="btnStop">Stop</button>
+        <button type="button" class="btn btn-danger" (click)="removeTask(task.code)" name="btnDelete">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
